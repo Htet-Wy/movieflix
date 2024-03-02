@@ -1,0 +1,156 @@
+.header_container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-block: 20px;
+  padding-inline: 16px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: var(--bg-clr);
+}
+
+.logo {
+  text-decoration: none;
+  color: var(--rating-clr);
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.open_menu {
+  display: none;
+}
+
+.close_menu,
+.open_menu {
+  font-size: 32px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.3s ease-in;
+}
+
+.open_menu:hover,
+.close_menu:hover {
+  opacity: 1;
+}
+
+.searchbar_desktop,
+.searchbar_mobile {
+  position: relative;
+}
+
+.searchbar_desktop {
+  width: 40%;
+}
+
+.searchbar_mobile {
+  display: none;
+  width: 100%;
+}
+
+.search_field {
+  background-color: var(--banner-bg-clr);
+  height: 48px;
+  line-height: 48px;
+  padding-inline: 44px 16px;
+  border-radius: 8px;
+  outline: none;
+  transition: 250ms ease;
+}
+
+.search_field::placeholder {
+  color: var(--on-surface-variant);
+}
+
+.search_field:hover {
+  box-shadow: 0 0 0 2px var(--on-surface-variant);
+}
+
+.search_field:focus {
+  box-shadow: 0 0 0 2px var(--on-surface-clr);
+  padding-inline: 16px;
+}
+
+.search_field_icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  opacity: 0.5;
+  transition: 250ms ease;
+}
+
+.close_icon {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: 250ms ease;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.close_icon:active {
+  opacity: 1;
+}
+
+.searchbar_desktop:focus-within .search_field_icon,
+.searchbar_mobile:focus-within .search_field_icon {
+  opacity: 0;
+}
+
+.searchbar_desktop:focus-within .close_icon,
+.searchbar_mobile:focus-within .close_icon {
+  opacity: 0.5;
+}
+
+.sidebar_mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.search_modal {
+  top: 94px;
+  width: 100%;
+  padding: 50px 24px;
+  overflow-y: auto;
+  background-color: var(--surface-clr);
+  z-index: 4;
+}
+
+.search_label {
+  color: var(--primary-variant-clr);
+  font-weight: 700;
+  margin-block-end: 8px;
+}
+
+.search_title {
+  font-size: var(--fs-head);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-block-end: 32px;
+}
+
+@media screen and (max-width: 1000px) {
+  .open_menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .searchbar_desktop {
+    display: none;
+  }
+
+  .searchbar_mobile {
+    display: block;
+  }
+
+  .search_modal {
+    top: 149px;
+  }
+}

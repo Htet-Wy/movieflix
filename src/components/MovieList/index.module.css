@@ -1,0 +1,35 @@
+.movie_list {
+  margin-block-start: 32px;
+}
+
+.title {
+  font-size: var(--fs-title-lg);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-block-end: 24px;
+}
+
+.movies {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  color: var(--text-clr);
+}
+
+.movies::before,
+.movies::after {
+  content: "";
+  min-width: 4px;
+}
+
+.movies::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.movies:is(:hover, :focus-within)::-webkit-scrollbar-thumb {
+  background-color: var(--banner-bg-clr);
+}
+
+.movies::-webkit-scrollbar-button {
+  width: 20px;
+}

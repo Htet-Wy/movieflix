@@ -1,0 +1,81 @@
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--bg-clr);
+  width: 300px;
+  height: 100vh;
+  transition: 550ms ease;
+  padding: 36px;
+  overflow-y: auto;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.sidebar:is(:hover, :focus-within)::-webkit-scrollbar-thumb {
+  background-color: var(--banner-bg-clr);
+}
+
+.sidebar::-webkit-scrollbar-button {
+  height: 10px;
+}
+
+.genre_list {
+  display: grid;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer {
+  margin-block-start: 26px;
+  padding-block-start: 28px;
+  border-block-start: 1px solid var(--banner-bg-clr);
+  color: var(--on-surface-variant);
+}
+
+.footer a {
+  color: var(--on-surface-variant);
+}
+
+.title {
+  font-size: var(--fs-title);
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  margin-block-end: 8px;
+  border-block-end: 1px solid var(--banner-bg-clr);
+  padding-block-end: 20px;
+}
+
+.genre,
+.active_genre {
+  text-decoration: none;
+  transition: 250ms ease;
+}
+
+.genre {
+  color: var(--on-surface-variant);
+}
+
+.active_genre {
+  color: var(--on-bg-clr);
+}
+
+.genre:is(:hover, :focus-visible) {
+  color: var(--on-bg-clr);
+}
+
+@media (min-width: 1000px) {
+  .sidebar {
+    position: sticky;
+    top: 10%;
+    padding-inline: 24px;
+    width: 250px;
+    height: 500px;
+  }
+
+  .genre_list {
+    gap: 20px;
+  }
+}

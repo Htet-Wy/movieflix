@@ -1,0 +1,37 @@
+.title_wrapper {
+  margin-block-end: 56px;
+}
+
+.back_btn {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  scale: 1;
+  transition: scale 250ms ease;
+}
+
+.back_btn:is(:hover, :focus-visible) {
+  scale: 1.1;
+}
+
+.genre_title {
+  font-size: var(--fs-head);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+}
+
+.load_btn {
+  background-color: var(--primary-variant-clr);
+  font-size: var(--fs-button);
+  font-weight: 700;
+  padding-block: 12px;
+  padding-inline: 20px;
+  margin-block: 36px 60px;
+  border-radius: 8px;
+  transition: 250ms ease;
+}
+
+.load_btn:is(:hover, :focus-visible) {
+  --primary-variant-clr: hsla(350, 67%, 39%, 1);
+}

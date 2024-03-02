@@ -1,0 +1,23 @@
+.loading_img {
+  width: 200px;
+  height: 300px;
+  background-color: var(--banner-bg-clr);
+}
+
+.loading_title {
+  width: 200px;
+  height: 30px;
+  background-color: var(--banner-bg-clr);
+}
+
+.loading_rating {
+  width: 47px;
+  height: 27px;
+  background-color: var(--banner-bg-clr);
+}
+
+.loading_date {
+  width: 45px;
+  height: 27px;
+  background-color: var(--banner-bg-clr);
+}

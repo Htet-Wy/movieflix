@@ -1,0 +1,27 @@
+.detail_container {
+  color: var(--text-clr);
+}
+
+@media (min-width: 575px) {
+  .detail_container {
+    max-width: 700px;
+  }
+}
+
+@media (min-width: 768px) {
+  .movie_detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .detail_container {
+    flex-grow: 1;
+  }
+
+  .movie_poster {
+    flex-shrink: 0;
+    position: sticky;
+    top: 0;
+  }
+}

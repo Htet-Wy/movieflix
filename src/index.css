@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* bg colors */
+  --bg-clr: hsla(220, 17%, 7%, 1);
+  --banner-bg-clr: hsla(250, 6%, 20%, 1);
+  --white-alpha-clr: hsla(0, 0%, 100%, 0.2);
+  --on-bg-clr: hsla(220, 100%, 95%, 1);
+  --on-surface-clr: hsla(250, 100%, 95%, 1);
+  --on-surface-variant: hsla(250, 1%, 44%, 1);
+  --primary-clr: hsla(349, 100%, 43%, 1);
+  --primary-variant-clr: hsla(349, 69%, 51%, 1);
+  --rating-clr: hsla(44, 100%, 49%, 1);
+  --surface-clr: hsla(250, 13%, 11%, 1);
+  --text-clr: hsla(250, 2%, 59%, 1);
+  /* gradient colors */
+  --banner-overlay: 90deg, hsl(220, 17%, 7%) 0%, hsla(220, 17%, 7%, 0.5) 100%;
+  --bottom-overlay: 180deg, hsla(250, 13%, 11%, 0), hsla(250, 13%, 11%, 1);
+  /* shadow colors */
+  --shadow-one: 0 1px 4px hsla(0, 0%, 0%, 0.75);
+  --shadow-two: 0 2px 4px hsla(350, 100%, 43%, 0.3);
+  /* typography */
+  --ff-main: "DM Sans", sans-serif;
+  --fs-head: 4rem;
+  --fs-title-lg: 2.6rem;
+  --fs-title: 2rem;
+  --fs-body: 1.8rem;
+  --fs-button: 1.5rem;
+  --fs-label: 1.4rem;
+}
+
+input,
+button {
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+}
+
+input {
+  width: 100%;
+}
+
+a,
+img,
+span,
+iframe,
+button {
+  display: block;
+}
+
+img {
+  height: auto;
+}
+
+html {
+  font-family: var(--ff-main);
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-clr);
+  color: var(--on-bg-clr);
+  font-size: var(--fs-body);
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--banner-bg-clr);
+  border-radius: 8px;
+}

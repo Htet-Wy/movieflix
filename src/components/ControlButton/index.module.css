@@ -1,0 +1,18 @@
+.control_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider_btn,
+.active_slider_btn {
+  width: 100px;
+  flex-shrink: 0;
+  filter: brightness(0.4);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.active_slider_btn {
+  filter: brightness(1);
+}
