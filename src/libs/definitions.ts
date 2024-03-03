@@ -9,6 +9,11 @@ export type genre = {
   name: string;
 };
 
+export interface MovieLoaderError {
+  message: string;
+  status: number;
+}
+
 export type collection = {
   id: number;
   name: string;

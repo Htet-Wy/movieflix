@@ -26,12 +26,13 @@ import {
 } from "./libs/data";
 import MovieDetailPage from "./pages/MovieDetailPage";
 import GenrePage from "./pages/GenrePage";
-import Genre from "./components/Genre";
+import ErrorPage from "./pages/Error";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,

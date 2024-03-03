@@ -13,8 +13,6 @@ const Banner: React.FC<{ movies: movie[] }> = (props) => {
   const rating = bannerSlider.vote_average.toFixed(1);
   const genres = genreList(bannerSlider.genre_ids);
 
-  console.log(genres);
-
   const handleBtnClick = (index: number) => {
     setChooseBtn(index);
   };

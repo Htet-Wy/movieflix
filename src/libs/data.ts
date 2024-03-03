@@ -118,9 +118,11 @@ export const nowPlayingLoader = async () => {
   if (!response.ok) {
     throw json(
       {
-        message: "Couldn't fetch now playing movies",
+        message: "Couldn't fetch now-playing movies",
       },
-      { status: 500 }
+      {
+        status: 50,
+      }
     );
   } else {
     const data = await response.json();
