@@ -35,3 +35,9 @@
 .load_btn:is(:hover, :focus-visible) {
   --primary-variant-clr: hsla(350, 67%, 39%, 1);
 }
+
+@media (max-width: 420px) {
+  .genre_title {
+    font-size: 3rem;
+  }
+}

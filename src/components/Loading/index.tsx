@@ -3,7 +3,9 @@ import classes from "./index.module.css";
 
 export const PageLoading: React.FC<{ title: string }> = (props) => {
   return (
-    <div className={`d-flex justify-content-center align-items-center gap-3`}>
+    <div
+      className={`d-flex justify-content-center align-items-start gap-3 ${classes.loading_container}`}
+    >
       <p className="m-0">{props.title}</p>
       <div className="spinner-border" role="status">
         <span className="visually-hidden">Loading...</span>

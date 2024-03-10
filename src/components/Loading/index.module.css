@@ -1,3 +1,8 @@
+.loading_container {
+  width: 100%;
+  height: 100vh;
+}
+
 .loading_img {
   width: 200px;
   height: 300px;

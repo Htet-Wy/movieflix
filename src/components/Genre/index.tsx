@@ -60,7 +60,7 @@ const Genre: React.FC<{ title: string; movies: movie[]; genreId: number }> = (
       </div>
       <div className="row row-gap-5 column-gap-5">
         {props.movies.map((movie) => (
-          <div className="col" key={movie.id}>
+          <div className="col col-sm-auto" key={movie.id}>
             <Suspense fallback={<MovieCardLoading />}>
               <MovieCard movie={movie} />
             </Suspense>
